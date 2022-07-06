@@ -1,28 +1,25 @@
 <!DOCTYPE html>
-<html lang="en"
-    xmlns="www.w3.org/1999/xhtml"
-    xmlns:th="http://thymeleaf.org">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulário</title>
     <link rel="stylesheet" href="/css/styles.css">
+    <title>registrar</title>
 </head>
 
 <body>
 
-    <form method="get" action="/api/paginaInicial" class="tela-login">
+    <form method="post" action="/api/registrar" class="tela-login">
 
-        <h1>Login</h1>
         <input type="text" placeholder="Usuário" name="usuario">
         <br><br>
         <input type="password" placeholder="Senha" name="senha">
         <br><br>
-        <button class="tela-login-botao">Fazer Login</button>
-        <br><br>
-        <a href="registrar">clique aqui para registrar uma conta</a>
+        <button>
+            <a href="login">Criar Conta</a>
+        </button>
 
     </form>
 
