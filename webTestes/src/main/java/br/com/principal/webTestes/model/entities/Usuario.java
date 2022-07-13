@@ -12,13 +12,17 @@ public class Usuario {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int id;
 
-	private String usuario;
+	private String nome;
 	private String senha;
 
-	public Usuario(String usuario, String senha) {
+	public Usuario(String nome, String senha) {
 		super();
-		this.usuario = usuario;
+		this.nome = nome;
 		this.senha = senha;
+	}
+
+	public Usuario() {
+		super();
 	}
 
 	public int getId() {
@@ -29,12 +33,12 @@ public class Usuario {
 		this.id = id;
 	}
 
-	public String getUsuario() {
-		return usuario;
+	public String getNome() {
+		return nome;
 	}
 
-	public void setUsuario(String usuario) {
-		this.usuario = usuario;
+	public void setNome(String nome) {
+		this.nome = nome;
 	}
 
 	public String getSenha() {
